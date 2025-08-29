@@ -76,7 +76,7 @@ async function sendGoodbyeMessage(groupId, participant)
     groupId,
     text: \`Goodbye @${participant.split('@')}!\``
     ({ mentions: [participant] }
-  );
+  )
 }
 
   // Auto view status & auto like (simulate)

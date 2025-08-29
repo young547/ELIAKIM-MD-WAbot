@@ -74,7 +74,7 @@ for (const participant of update.participants) {
 async function sendGoodbyeMessage(groupId, participant) 
   await sock.sendMessage(
     groupId,
-     text: `Goodbye @{participant.split('@')[0]}!` },
+    text: `Goodbye @${participant.split('@')
     { mentions: [participant] }
   );
 }

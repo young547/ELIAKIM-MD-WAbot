@@ -71,10 +71,13 @@ for (const participant of update.participants) {
         await sock.sendMessage(groupId, { text: `Welcome @participant.split('@')[0] to the group¡,  mentions: [participant] )
       
       if (update.action === 'remove') 
-        await sock.sendMessage(groupId,  text: `Goodbye @{participant.split('@')[0]}!` }, { mentions: [participant] })
-      }
-    }
-  })
+async function sendGoodbyeMessage(groupId, participant) 
+  await sock.sendMessage(
+    groupId,
+     text: `Goodbye @{participant.split('@')[0]}!` },
+    { mentions: [participant] }
+  );
+}
 
   // Auto view status & auto like (simulate)
   async function autoViewStatus() {

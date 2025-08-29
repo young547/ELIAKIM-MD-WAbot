@@ -75,7 +75,7 @@ async function sendGoodbyeMessage(groupId, participant)
   await sock.sendMessage(
     groupId,
     text: \`Goodbye @${participant.split('@')}!\``
-    ({ mentions: [participant] })
+    ({ mentions: [participant] }
   );
 }
 

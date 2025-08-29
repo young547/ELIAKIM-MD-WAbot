@@ -1,0 +1,17 @@
+
+{
+  "name": "eliakim-md-bot",
+  "version": "1.0.0",
+  "description": "ELIAKIM-MD WhatsApp Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Eliakim",
+  "license": "MIT",
+  "dependencies": {
+    "@adiwajshing/baileys": "^4.4.0",
+    "pino": "^8.11.0",
+    "chalk": "^5.3.0"
+  }
+}
